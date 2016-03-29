@@ -2,7 +2,7 @@
   "name": "brief_spread",
   "version": "1.0.0",
   "description": "TSV Editor",
-  "main": "main.js",
+  "main": "electron-src/js/main.js",
   "dependencies": {
     "electron-prebuilt": "^0.37.2"
   },

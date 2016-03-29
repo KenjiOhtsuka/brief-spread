@@ -1,0 +1,6 @@
+node_modules
+config/default.json
+
+electron-src/css
+electron-src/html
+electron-src/js
