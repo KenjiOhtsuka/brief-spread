@@ -1,12 +1,16 @@
 {
-  "name": "tsv_editor",
+  "name": "brief_spread",
   "version": "1.0.0",
   "description": "TSV Editor",
   "main": "main.js",
   "dependencies": {
     "electron-prebuilt": "^0.37.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "coffee-script" : "",
+    "jade"          : "",
+    "node-sass"     : ""
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
