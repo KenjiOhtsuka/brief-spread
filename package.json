@@ -1,0 +1,15 @@
+{
+  "name": "tsv_editor",
+  "version": "1.0.0",
+  "description": "TSV Editor",
+  "main": "main.js",
+  "dependencies": {
+    "electron-prebuilt": "^0.37.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kenji Otsuka",
+  "license": "GPL-3.0"
+}
