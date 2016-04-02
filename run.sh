@@ -13,7 +13,8 @@ if [ $# -eq 1 ]; then
       if [ ! -d electron-src/js ]; then mkdir electron-src/js; fi
       ./node_modules/.bin/node-sass -o electron-src/css src/sass
       ./node_modules/.bin/jade src/jade --out electron-src/html
-      ./node_modules/.bin/coffee -c -b -o electron-src/js src/coffee
+      #./node_modules/.bin/coffee -c -b -o electron-src/js src/coffee
+      ./node_modules/.bin/tsc --outDir electron-src/js --rootDir src/ts src/ts/index.ts src/ts/main.ts
       return
       ;;
     clean)
