@@ -1,0 +1,99 @@
+html
+  font-size: 62.5%
+  background-color: white
+
+*
+  padding: 0
+  margin: 0
+
+html, body
+  height: 100%
+
+div.tool_bar
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 30px
+  background-color: lightgray
+  padding-top:    auto
+  padding-bottom: auto
+
+div.center
+  box-sizing: border-box
+  height: 100%
+
+div.dir_tree
+  height:   100%
+  width:    300px
+  background: #FF66FF
+  float:    left
+  resize:   horizontal
+  overflow: scroll
+
+div.main_pane
+  height: 100%
+  width:  100%
+  float: left
+  font-size: 16px
+
+div.status_bar
+  position: fixed
+  height: 30px
+  bottom: 0
+  width: 100%
+  background-color: gray
+
+/* tool bar - start */
+span.tool_button
+  display: inline-block
+  height:    30px
+  font-size: 16px
+  padding:    7px
+  box-sizing: border-box
+  vertical-align: middle
+  cursor: pointer
+  &:hover
+    background-color: cyan
+
+span#current_directory
+  font-size: 16px
+  padding: 3px
+
+ul#contents
+  list-style: none
+  height:     100%
+  padding-right:  7px
+  padding-bottom: 7px
+  box-sizing: border-box
+  overflow:   scroll
+
+  li.fs_node
+    display: inline-block
+    margin-left: 5px
+    margin-top:  5px
+    width:       80px
+    vertical-align: top
+    padding:     5px
+    &.active
+      background-color: lightblue
+
+    span.icon
+      font-size:  60px
+      text-align: center
+      display:    block
+      color:      gray
+    span.name
+      font-size:  16px
+      text-align: center
+      display:    block
+      word-wrap:  break-word
+      margin-top: 3px
+
+div.setting_pane
+  background-color: white
+  position: absolute
+  width:    100%
+  height:   100%
+  z-index:  100
+  display:  none
