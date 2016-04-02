@@ -1,5 +1,6 @@
 class Sheet {
   private data;
+  private container;
 
   setData(data) {
     this.data = data;
@@ -8,5 +9,10 @@ class Sheet {
 
   getData() {
     return this.data;
+  }
+
+  setContainer(container) {
+    this.container = container;
+    return this;
   }
 }
