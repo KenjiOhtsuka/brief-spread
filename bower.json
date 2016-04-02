@@ -1,0 +1,21 @@
+{
+  "name": "brief_spread",
+  "description": "TSV Editor",
+  "main": "electron-src/js/main.js",
+  "authors": [
+    "Kenji Otsuka"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/KenjiOhtsuka/brief-spread",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handsontable": "^0.24.1"
+  }
+}

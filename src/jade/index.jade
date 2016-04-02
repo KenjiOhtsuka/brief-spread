@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    title brief-spread
+    script(src="../lib/handsontable.full.min.js")
+    link(rel="stylesheet", href="../lib/handsontable.full.min.css")
+  body
+    div.tool_bar
+      span.tool_button.fa.fa-refresh(onclick="explorer.showContents(explorer.getCurrentDirectory())")
+      span.tool_button.fa.fa-copy
+      span.tool_button.fa.fa-paste
+      span.tool_button.fa.fa-cut
+      span.tool_button.fa.fa-arrow-up(onclick="explorer.up()")
+      span#current_directory
+      span.tool_button.fa.fa-cog(onclick="explorer.toggleSetting()")
+    div.center
+      div.dir_tree
+      div.main_pane#main_pane
+        ul#contents
+      div.setting_pane#setting_pane
+        form(onsubmit="return false;")
+          label
+          input#config_json(type="file")
+          button(type="button", onclick="explorer.loadConfigJson()") Load
+    div.status_bar
+
+    link(rel="stylesheet", href="../css/index.css")
+    script(src="../js/index.js")
