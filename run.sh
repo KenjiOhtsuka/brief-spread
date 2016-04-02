@@ -14,7 +14,8 @@ if [ $# -eq 1 ]; then
       ./node_modules/.bin/node-sass -o electron-src/css src/sass
       ./node_modules/.bin/jade src/jade --out electron-src/html
       #./node_modules/.bin/coffee -c -b -o electron-src/js src/coffee
-      ./node_modules/.bin/tsc --outDir electron-src/js --rootDir src/ts src/ts/index.ts src/ts/main.ts
+      ./node_modules/.bin/tsc --out electron-src/js/main.js --rootDir src/ts src/ts/main.ts
+      ./node_modules/.bin/tsc --out electron-src/js/index.js --rootDir src/ts src/ts/index.ts
       return
       ;;
     clean)

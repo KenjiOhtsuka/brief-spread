@@ -1,4 +1,5 @@
 /// <reference path="typings/browser/ambient/jquery-handsontable/index.d.ts" />
+/// <reference path="editor.ts" />
 
 var data = [
   [1, 2, 3, 4],
@@ -10,5 +11,9 @@ const container = document.getElementById('main_pane');
 new Handsontable(container, {
   data: data,
   rowHeaders: true,
-  colHeaders: true
+  colHeaders: true,
+  minSpareRows: 1,
+  minSpareCols: 1
 });
+
+const editor = new Editor();
