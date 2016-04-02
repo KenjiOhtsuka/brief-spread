@@ -1,0 +1,6 @@
+{
+  "ambientDependencies": {
+    "github-electron/electron-prebuilt": "registry:dt/github-electron/electron-prebuilt#0.30.1+20160316155526",
+    "jquery-handsontable": "registry:dt/jquery-handsontable#0.0.0+20160329175446"
+  }
+}
