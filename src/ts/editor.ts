@@ -22,6 +22,7 @@ class Editor {
   }
 
   private convertFileToData(file) {
+    // file : file object
     return [];
   }
 }
