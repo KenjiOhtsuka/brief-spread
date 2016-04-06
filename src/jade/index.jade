@@ -11,16 +11,16 @@ html(lang="en")
       span.tool_button.fa.fa-paste
       span.tool_button.fa.fa-cut
       span#current_directory
-      span.tool_button.fa.fa-cog(onclick="explorer.toggleSetting()")
+      span.tool_button.fa.fa-cog(onclick="editor.toggleSetting()")
     div.center
       //div.dir_tree
       div.main_pane#main_pane
-      //  ul#contents
-      //div.setting_pane#setting_pane
-      //  form(onsubmit="return false;")
-      //    label
-      //    input#config_json(type="file")
-      //    button(type="button", onclick="explorer.loadConfigJson()") Load
+        //  ul#contents
+      div.setting_pane#setting_pane
+        form(onsubmit="return false;")
+          label
+          input#tsv_file(type="file")
+          button(type="button", onclick="editor.loadConfigJson()") Load
     div.status_bar
 
     link(rel="stylesheet", href="../css/index.css")

@@ -6,6 +6,7 @@ var data = [
   [5, 6, 7, 8]
 ];
 
+const settingPane = document.getElementById('setting_pane');
 const container = document.getElementById('main_pane');
 
 new Handsontable(container, {
@@ -16,4 +17,5 @@ new Handsontable(container, {
   minSpareCols: 1
 });
 
-const editor = new Editor();
+
+const editor = new Editor(container, settingPane);
